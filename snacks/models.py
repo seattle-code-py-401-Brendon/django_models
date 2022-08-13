@@ -8,4 +8,4 @@ class Snack(models.Model):
     purchaser = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'{self.name},{self.purchaser}, {self.description}'
+        return f'Name: {self.name}, Description: {self.description}, Purchaser: {self.purchaser}'
